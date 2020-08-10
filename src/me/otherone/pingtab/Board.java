@@ -22,9 +22,8 @@ public class Board {
                     score.setScore(Ping.get(player));
                     player.setScoreboard(board);
                 }
-                if (Bukkit.getOnlinePlayers().size() == 0) {
+                if (Bukkit.getOnlinePlayers().size() == 0)
                     cancel();
-                }
             }
         }.runTaskTimerAsynchronously(plugin, 0L, 20L);
     }
