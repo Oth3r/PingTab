@@ -18,7 +18,7 @@ public class PingTab extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        if (Bukkit.getOnlinePlayers().size() > 2)
+        if (Bukkit.getOnlinePlayers().size() == 1)
             Board.loop(this);
     }
 
